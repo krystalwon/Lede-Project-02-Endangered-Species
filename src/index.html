@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lede Project02: The Dire Dancde with Extinction</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <body>
+    <!-- partial:index.partial.html -->
+    <section class="contents">
+      <div class="title"><img src="../svgs/title.png" alt="title" /></div>
+      <div class="subtitle">
+        <p>By Krystal Won</p>
+      </div>
+
+      <div class="body">
+        <p>
+          Picture this: you're at a wild party, the dance floor's packed and the
+          energy's off the charts. Suddenly, the music drops out. Half the
+          crowd's gone. Then more leave. And more. Until it's just you, swaying
+          awkwardly all alone. Sounds pretty dreadful, right? Well, that's kind
+          of what's happening to our planet -- we're losing species.
+        </p>
+        <p>
+          Humans trying to save endangered species is like running a marathon
+          where the finish line keeps moving further away. We're running, we're
+          sweating, we're putting in the effort, but no matter how hard we try,
+          it never seems enough to get us across the line. The dual threats of
+          overexploitation and climatic upheaval aren't just moving the
+          goalposts but turning the whole field into quicksand.
+        </p>
+      </div>
+      <div class="map">
+        <img src="../svgs/map.svg" alt="continent-map" />
+      </div>
+      <div class="red-list-category">
+        <img
+          src="../svgs/red-list2.svg"
+          alt="red-list-category"
+          width="800px"
+        />
+      </div>
+
+      <div id="observablehq-viewof-continent-8b4a32ff"></div>
+      <p class="map-description">
+        Source:
+        <a href="http://www.earthsendangered.com/index.asp"
+          >Earth's Endangered Creatures</a
+        >
+      </p>
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css"
+      />
+      <script type="module">
+        import {
+          Runtime,
+          Inspector,
+        } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/@bumbeishvili/continent-selector.js?v=3";
+        new Runtime().module(define, (name) => {
+          if (name === "viewof continent")
+            return new Inspector(
+              document.querySelector("#observablehq-viewof-continent-8b4a32ff")
+            );
+        });
+      </script>
+    </section>
+    <section class="horizontal">
+      <div class="pin-wrap">
+        <div class="animation-wrap to-right">
+          <div class="item" id="elephant">
+            <div>
+              <h2>
+                <i
+                  >1. African Forest Elephant: Gabon's Green Heart Beats with a
+                  Fading Pulse</i
+                >
+              </h2>
+              <p>
+                The verdant heart of Central Africa, Gabon, is home to a unique
+                dweller –- the African forest elephant. In 2021, the reality of
+                this majestic creature's plight was revealed through a solemn
+                expedition by dedicated researchers. The revelations were stark
+                - the population had dwindled to approximately 95,000. Over the
+                span of 31 years, a devastating decline of over 86% had
+                occurred. Classified as critically endangered by the IUCN in the
+                same year, this singular species, one of two African elephant
+                types, grapples with survival in their ever-constricting forest
+                homes.
+              </p>
+            </div>
+            <div class="animal-container">
+              <img
+                src="../svgs/elephanttooltip2.svg"
+                id="animal-tooltip"
+                alt="animal-tooltip"
+              />
+              <img src="../svgs/elephant.svg" alt="elephant" class="animal" />
+            </div>
+          </div>
+
+          <div class="item" id="elephant">
+            <div>
+              <h2>
+                The Dark Side of Demand - Poaching and the Threat to African
+                Forest Elephants
+              </h2>
+
+              <p>
+                The primary threats to these elephants stem from rampant
+                poaching, driven by the demand for bushmeat and the insidious
+                global ivory trade. Thousands of these grand creatures are
+                killed every year to feed this illegal demand. The magnitude of
+                this tragedy was gruesomely illustrated in January 2012, when a
+                horde of Sudanese poachers massacred over 200 elephants in a
+                solitary national park in Cameroon.
+              </p>
+            </div>
+          </div>
+
+          <!--  i want to make separate paragraphs here -->
+          <div class="item" id="leopard">
+            <div>
+              <h2>
+                <i>2. The Amur Leopard: A Struggle Against Extinction</i>
+              </h2>
+              <p>
+                The Amur leopard, known as the world's rarest big cat, was first
+                classified as critically endangered by IUCN back in 1960. This
+                leopard subspecies, one among the eight that inhabit the
+                terrains of Africa and Asia, has been teetering on the brink of
+                extinction for decades. In 2007, estimates suggested as few as
+                19 to 26 wild leopards left. By 2015, the count barely crossed
+                60 in both Russia and China.
+              </p>
+            </div>
+            <div class="animal-container">
+              <img
+                src="../svgs/leopardtooltip.svg"
+                class="leopard"
+                id="animal-tooltip"
+                alt="animal-tooltip"
+              />
+              <img src="../svgs/leopard.svg" alt="leopard" class="animal" />
+            </div>
+          </div>
+
+          <div class="item" id="leopard">
+            <div>
+              <h2>Recovery on the Horizon</h2>
+              <div>
+                <p>
+                  However, recent reports from 2021 indicate a potential turning
+                  point. Current estimates put the wild Amur leopard population
+                  at around 110. These numbers represent not just a glimmer of
+                  hope, but the fruit of concerted conservation efforts.
+                </p>
+                <p>
+                  Let’s go behind the numbers and swing back to 1999. Back then,
+                  the Russian government had approved a plan for the protection
+                  of the Amur leopard. Furthermore, Russian President Vladimir
+                  Putin, in power since 2000, showed his commitment to the
+                  preservation of this species by signing an order in 2012. This
+                  order expanded the leopard's protected habitat and led to the
+                  establishment of the 269,000-hectare "Land of the Leopard ''
+                  national park.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" id="elowlandgorilla">
+            <div class="animal-container">
+              <img
+                src="../svgs/elowlandgorillatooltip.svg"
+                id="animal-tooltip"
+                alt="animal-tooltip"
+              />
+              <img
+                src="../svgs/elowlandgorilla.svg"
+                alt="eastern-lowland-gorilla"
+                class="animal"
+              />
+            </div>
+            <div>
+              <h2>
+                <i>
+                  3. For Eastern Lowland Gorilla, It's a Desperate Battle
+                  Against a 58% Population Decline</i
+                >
+              </h2>
+              <p>
+                In the heart of the rainforests of the eastern Democratic
+                Republic of the Congo (DRC) roams one of the world's most
+                endangered primates, the eastern lowland gorilla.
+              </p>
+              <p>
+                Previous years' study pointed out that fewer than 4,000 of these
+                remarkable creatures are estimated to inhabit the wild, but the
+                story is evolving. Fortunately, a revised density estimate now
+                puts the population at around 6,800 - a flicker of hope, yet far
+                from a sigh of relief.
+              </p>
+              <p>
+                Over the span of a single generation, from 1995 to 2016, the
+                population of these gorillas plunged by a staggering 58%,
+                dwindling at an annual rate of 4.0%. To put it in perspective,
+                the current population of 5,252 is just 42% of the 1995-1996
+                estimate of 12,390 for the same area. The drastic decline led to
+                the classification of the Grauer's gorilla as Critically
+                Endangered in 2016.
+              </p>
+            </div>
+          </div>
+          <div class="item" id="elowlandgorilla">
+            <div>
+              <h2>The Biological Bond and Risks Between Humans and Gorillas</h2>
+              <p>
+                What's equally striking is our biological kinship with these
+                animals. Human share around 98% of our DNA with gorillas,
+                marking them as our closest relatives after chimpanzees and
+                bonobos. This close genetic link, however, leaves them
+                vulnerable to human diseases, even common colds, as they haven't
+                developed necessary immunities or any medical protection. Their
+                diet, mainly composed of stems, bamboo shoots, and fruits, is
+                indicative of their gentle, non-aggressive nature.
+              </p>
+            </div>
+          </div>
+          <div class="item" id="elowlandgorilla">
+            <div>
+              <h2>
+                Poaching, Disease, and Tourism's Complex Impact on Gorilla
+                Survival
+              </h2>
+              <p>
+                However, they face an array of threats, primarily stemming from
+                human activities. Poaching, human-related diseases like Ebola,
+                and the destruction of their native afromontane forest home all
+                pose considerable challenges.
+              </p>
+              <p>
+                In a poignant incident in 2007, an entire family of mountain
+                gorillas was slaughtered by locals, a political act aimed at
+                forcing the park open for resource exploitation.
+              </p>
+              <p>
+                Even tourism, despite its benefits in bring up economy status
+                for conservation, adds to the threats. Although visitors are
+                instructed to maintain a distance of 7 meters, the presence of
+                conservationists, scientists, rangers, and even local
+                communities in their habitat adds layers of complexity to their
+                survival.
+              </p>
+            </div>
+          </div>
+          <div class="item" id="javanrhino">
+            <div class="animal-container">
+              <img
+                src="../svgs/javanrhinotooltip.svg"
+                id="animal-tooltip"
+                alt="animal-tooltip"
+              />
+              <img
+                src="../svgs/javanrhino.svg"
+                alt="eastern-lowland-gorilla"
+                class="animal"
+              />
+            </div>
+            <div>
+              <h2>
+                <i
+                  >4. Javan Rhinos: The Most Tenuous Existence Among Its Family
+                </i>
+              </h2>
+              <p>
+                In a remote corner of Ujung Kulon National Park in Java,
+                Indonesia, a rare and precious population of Javan rhinos clings
+                to survival. With just 76 individuals remaining on our planets,
+                they are the most endangered among all rhino species. Once
+                thriving across the lush landscapes of northeast India and
+                Southeast Asia, their range has been decimated, leaving only
+                this small enclave as their last stronghold.
+              </p>
+              <p>
+                This extraordinary species, the Javan rhino, is confined to a
+                single protected area, making their survival all the more
+                precarious. Their biology remains shrouded in mystery, as
+                scientists have struggled to gain comprehensive knowledge about
+                their behaviors and needs. The dense jungles they inhabit have
+                hindered detailed observation, and the species has never
+                successfully bred in captivity, further exacerbating their
+                vulnerability.
+              </p>
+            </div>
+          </div>
+          <div class="item" id="javanrhino">
+            <div>
+              <h2>Escalating Threats</h2>
+              <p>
+                Recent years have brought fresh challenges to the dwindling
+                Javan rhino population. Disease has emerged as a deadly threat,
+                claiming the lives of these rare rhinos. The root of the disease
+                can be traced back to wild cattle in the park, underscoring the
+                complex web of interactions within the ecosystem and the grave
+                consequences they can have for these magnificent creatures.
+              </p>
+
+              <p>
+                Sadly, the last hope for wild Javan rhinos outside Ujung Kulon
+                National Park vanished in 2010. A rhino in Cat Tien National
+                Park, Vietnam, fell victim to poaching, its horn savagely
+                removed. This cruel act sealed the fate of the species in
+                Vietnam, officially declaring it extinct the following year.
+              </p>
+            </div>
+          </div>
+
+          <div class="item" id="blackrhino">
+            <div class="animal-container">
+              <img
+                src="../svgs/blackrhinotooltip.svg"
+                id="animal-tooltip"
+                alt="animal-tooltip"
+              />
+              <img
+                src="../svgs/blackrhino.svg"
+                alt="black-rhino"
+                class="animal"
+                width="220px"
+              />
+            </div>
+            <div>
+              <h2>
+                5. The Precarious Journey of Black Rhinos: Battling Decline and
+                Illegal Trade
+              </h2>
+              <p>
+                Black rhinos, adorned with their distinctive gray coats, possess
+                two magnificent horns, with the foremost horn prominently longer
+                than the other. Their adaptability is noteworthy, as they can
+                thrive in a wide array of habitats, ranging from arid deserts in
+                Namibia to verdant woodlands offering respite and sustenance.
+              </p>
+              <p>
+                Once roaming throughout the vast landscapes of sub-Saharan
+                Africa, the black rhino population witnessed a remarkable heyday
+                in the late 1800s and early 1900s, thriving with an estimated
+                count of up to 850,000 individuals. However, the passage of time
+                brought profound challenges, and by 1970, their numbers had
+                dwindled to a mere 65,000, scattered across isolated pockets of
+                their once abundant habitat.
+              </p>
+            </div>
+          </div>
+
+          <div class="item" id="blackrhino">
+            <div>
+              <p>
+                This marked the beginning of a downward spiral for the species.
+                Large-scale poaching activities fueled by the illegal
+                international trade in rhino horn became a menacing force,
+                driving the black rhino population to the brink of oblivion.
+              </p>
+              <p>
+                By 1995, their situation had reached a critical point, with a
+                devastating decline of 98% since 1960, leaving only 2,410
+                individuals remaining. The relentless demand for rhino horn,
+                highly prized in traditional Chinese medicine and for ornamental
+                purposes, pushed these magnificent creatures to the edge of
+                extinction.
+              </p>
+              <hr />
+              <div style="min-height: 292px">
+                <script
+                  type="text/javascript"
+                  defer
+                  src="https://datawrapper.dwcdn.net/joQam/embed.js?v=4"
+                  charset="utf-8"
+                ></script>
+                <noscript
+                  ><img
+                    src="https://datawrapper.dwcdn.net/joQam/full.png"
+                    alt=""
+                /></noscript>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blank">
+      <h1>...what do you think?</h1>
+      <p>...</p>
+    </section>
+    <!-- partial -->
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
